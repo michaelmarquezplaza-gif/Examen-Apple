@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo Apple</title>
+  <link rel="stylesheet" href="apple.css">
+</head>
+<body>
+
+<header>
+  <div class="header-container">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANwAAACUCAMAAADPj7eyAAAAllBMVEUAAAD////29vbDxMINDQ2FhYUzNDKhoqCsrav8/fz09fPV1tdNTk1KS0qpq6jc3tzm6OWZmph+f37NzsxbXVpTVFMRExFwcW9iZGE7PDsiJCK1trVpamkyMTLs7OwAAAcqLCqNjo1BQ0AaHBopJyMYFxFVU003NS8WDw5IQkEqJid5d3ZbWVvBvb0ZFxdAQUMLFxkWICO1+0kDAAAE3ElEQVR4nO2ca3ejOAyGMQQIl8RgoJBAKdCd3Wlpuzv//88N5NYESHp2Y1Vajp+PHZ+p3sq2JFtY0xQKhUKhUECxsPwVtg0wVHFa516EbQYEq3bNWQ+2IfLxa8NlbJbiLBGxE9jGSCbLdTZTcVuTn0ljDrY9MtnY5bk2FmAbJJFmqV9oYzMKBU0+0MZCbJOkUQ39xliCbZMsFuFIm7vANkoWbTnUxnJsm2ThRyNtzMc2ShahM9LmzWVWFnzsuAzbKEk8r8favGdsqyQx5bjZVKr2WNv6AdsoSUxslcEjtlGyEO5I3GySEy0caWuxTZLGJh9qM+cS4jQtHu6V9Xy0aUVwIc2Zkd8GObPDY2x7pCLOih09r7DNkcspEjhu9L9127O1SpI4ThK/qc7zj3Q3LR09MIrPH253g7N+tLX9dlP/JVVShDl3dwTR0oz96vhPWVQG3DPq5viDxeat3Q/uynE3MMI0qab+TyI0xXqw3zt8XSR7l2yzNN58jt1ktTEsy4N1SjWRboQxykF6uJ36g8KmisX7OBnriUyKlbnVGuMy+2Ry2MbWIa4trFgsJ4qfI565uf2bvp84n/bEEZfnoSnaVpjdMrv+V+jRjYJUIbQVN1xxwnHd0r0tbE9QW9iKPhme/t+Nm5NZef7ohPxuHINIqeff2En+u7qIxLEYiLYOj0CO1gBp6+IH+sy0xrc20jCQd5WHGk6bvkSO5oPyWiaesHBr9dV0NikBJ18hH0M8jE/rJOGGFa40wElZhh/Y2v6YOPyXgm7jn4xlQI5zCNwk/4BacdEPbGmalkxccMuA/4mtrKOF0eba2MI6tkDbiYctrCfxQLSVNbawngImq6TR5iZAtLkk2tyqib4LCfC/sIX1rGACAY1ZmYCkJyTiQLefgJwulMXXv/kbKCC0sYDEktNSEHH8J7auHTCRgMZ+sjAhtDkGtq4dSpwSd8Gc1xyNegdKHI3UEigUlOiXHztgDhlcEqUqUIZC4VRPg8otmUeikSGWfMd/oEyxhfX4MOdDNOblC9DtFX/BVtbxCnRsqS+xlfXABLrOdRQa92BiAZFVF4PdPApsaXA7Shfr8PeUD7ALcUagqgO6wurBX3ZQt8Y96PFg/OWRRIxXXHGLGlAc895wOxoKmNz5QFmjOu/lHVIcY1GK+dVnDSuuW3ktXnMbYM/eERutT+pxCa3NRaxdBVQL8JEccdXB9Vvu0VG/R65hXfeO2ggcw5ykHNBxi5+fcKVBh/E3qjgtA3Sda+Jq0z5suFWHu+J63sBcVxJ4ugHMdTly1dMD1CfV1TzYynpqkMpHJ9G+p72CVD4GkUduph5OuhdO4ranx5beNEvhs4kDj9L3lIjIpOzJJE9MTuKD1SNyJyaNRucTC6mFHYHj9AsaiRPTQ88phwhpoTyg0Qp8gaxlR6TPZkAuJYN20O9AppGxqZC4NJ7k/lhOpJt0kltPGTiOvufGGJ2s33quPR6ilzxa1m2atqLOveCKQBo9KNcJJ64PnNILL55Z2KZLPvFXCEjuk+dk3uAxIp3nE49/bGtvEBh1Cm+EfEl4bnbp2dfyDREF+tk48m7b82QaHi/L3QNt4p8bA+N1xINuYDfOfPo28+7GSoRppv6vLwc2mTDFG6HHohQKhUKhUCgUCoVCoVAoJvgNo7pPu8tifGUAAAAASUVORK5CYII=" class="logo">
+    <h1> APPLE</h1>
+  </div>
+</header>
+
+<main class="main-container">
+
+  <!-- PANEL LATERAL: FORMULARIO + FILTROS -->
+  <aside class="sidebar">
+    <!-- Formulario agregar -->
+    <section class="form-container">
+      <h2>Agregar Producto</h2>
+      <form id="formApple">
+        <input type="text" id="producto" placeholder="Producto" required>
+        <input type="number" id="precio" placeholder="Precio" required>
+        <input type="number" id="stock" placeholder="Stock" required>
+        <input type="text" id="imagen" placeholder="URL de la Imagen" required>
+        <button type="submit" class="btn-agregar">Guardar</button>
+      </form>
+    </section>
+
+    <!-- Filtros -->
+    <section class="filtros-container">
+      <h3>Filtros</h3>
+      <label for="filtroPrecio">Precio máximo:</label>
+      <input type="number" id="filtroPrecio" placeholder="Ej: 2000">
+      <label for="filtroStock">Stock mínimo:</label>
+      <input type="number" id="filtroStock" placeholder="Ej: 5">
+      <button id="aplicarFiltros" class="btn-agregar">Aplicar filtros</button>
+      <button id="resetFiltros" class="btn-cancelar">Resetear filtros</button>
+    </section>
+  </aside>
+
+  <!-- PANEL PRINCIPAL: PRODUCTOS -->
+  <section class="products-section">
+    <!-- Barra de búsqueda -->
+    <div class="busqueda-container">
+      <input type="text" id="buscarProducto" placeholder="Buscar producto...">
+    </div>
+
+    <h2 class="titulo-listado">Listado de Productos</h2>
+    <section id="contenedor" class="cards-container"></section>
+  </section>
+
+</main>
+
+<!-- MODAL EDITAR -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <h2>Editar Producto</h2>
+    <form id="formEditar">
+      <input type="text" id="edit-producto" required>
+      <input type="number" id="edit-precio" required>
+      <input type="number" id="edit-stock" required>
+      <input type="text" id="edit-imagen" required>
+      <div class="modal-buttons">
+        <button type="submit" class="btn-guardar">Guardar Cambios</button>
+        <button type="button" onclick="cerrarModal()" class="btn-cancelar">Cancelar</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<footer>
+  <p>© 2025 Apple Store - Todos los derechos reservados</p>
+  <p>Contacto: soporte@apple.com | Tel: +1 800 275 2273</p>
+</footer>
+
+<script src="apple.js"></script>
+</body>
+</html>
